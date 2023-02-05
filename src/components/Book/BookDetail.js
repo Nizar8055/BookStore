@@ -18,7 +18,8 @@ const BookDetail = () => {
   useEffect(() => {
     const fetchHandler = async () => {
       await axios
-        .get(`http://localhost:5000/books/${id}`)
+      // http://localhost:5000/books/
+        .get(`https://backbook-qez4.onrender.com${id}`)
         .then((res) => res.data)
         .then((data) => setInputs(data.book));
     };
