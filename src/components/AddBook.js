@@ -27,10 +27,10 @@ const AddBook = () => {
     }));
     // console.log(e.target.name, "Value", e.target.value);
   };
-
+// http://localhost:5000/books
   const sendRequest = async () => {
     await axios
-      .post("http://localhost:5000/books", {
+      .post("https://bookbackend-4lh5.onrender.com", {
         name: String(inputs.name),
         author: String(inputs.author),
         description: String(inputs.description),
